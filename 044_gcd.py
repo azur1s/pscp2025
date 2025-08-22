@@ -1,0 +1,1 @@
+"""gcd"""; import math; print(math.gcd(*[int(input()) for _ in range(int(input()))]))
