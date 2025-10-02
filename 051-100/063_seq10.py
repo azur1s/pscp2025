@@ -10,10 +10,10 @@ def line_rev(l):
     return " ".join([str(j + 1).zfill(2) for j in reversed(range(l))])
 
 print("\n".join(
-    [line(i + 1).rjust(3 * n - 1, ' ') + ' ' + line_rev(i) for i in range(n)]
+    [(line(i + 1).rjust(3 * n - 1, " ") + " " + line_rev(i)).rstrip() for i in range(n)]
 ))
 if n > 1:
     print("\n".join(
-        [line(i + 1).rjust(3 * n - 1, ' ') + ' ' + line_rev(i)
+        [(line(i + 1).rjust(3 * n - 1, " ") + " " + line_rev(i)).rstrip()
         for i in reversed(range(n - 1))]
     ))
